@@ -14,12 +14,12 @@ My personal website, built with [Next.js](https://nextjs.org/), [Tailwind CSS](h
 
 
 ```sh-session
-git clone https://github.com/chronark/chronark.com.git
+git clone https://github.com/ahmadsalahuddeen/chronark.com.git
 cd chronark.com
 ```
 
 
-Create a `.env` file similar to [`.env.example`](https://github.com/chronark/chronark.com/blob/main/.env.example).
+Create a `.env` file similar to [`.env.example`](https://github.com/ahmadsalahuddeen/chronark.com/blob/main/.env.example).
 
 Then install dependencies and run the development server:
 ```sh-session

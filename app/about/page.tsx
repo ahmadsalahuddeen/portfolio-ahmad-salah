@@ -1,5 +1,5 @@
 'use client';
-import { Github, Mail, Twitter } from 'lucide-react';
+import { Github, GithubIcon, Instagram, Linkedin, Mail, Twitter, Youtube } from 'lucide-react';
 import Link from 'next/link';
 import { Navigation } from '../components/nav';
 import { Card } from '../components/card';
@@ -9,19 +9,19 @@ import { Suspense } from 'react';
 const socials = [
   {
     icon: <Twitter size={20} />,
-    href: 'https://twitter.com/chronark_',
+    href: 'https://twitter.com/salahuddeen6017',
     label: 'Twitter',
-    handle: '@chronark_',
+    handle: '@salahuddeen6017',
   },
   {
     icon: <Mail size={20} />,
-    href: 'mailto:dev@chronark.com',
+    href: 'mailto:dev@ahmadsalahuddeen6017@gmail.com',
     label: 'Email',
-    handle: 'dev@chronark.com',
+    handle: 'ahmadsalahuddeen6017@gmail.com',
   },
   {
     icon: <Github size={20} />,
-    href: 'https://github.com/chronark',
+    href: 'https://github.com/ahmadsalahuddeen',
     label: 'Github',
     handle: 'chronark',
   },
@@ -106,57 +106,48 @@ export default function Example() {
        >
         <section className=" mt-32">
           <h1 className="prose prose-neutral dark:prose-invert mb-8 text-2xl  font-medium tracking-tighter">
-            hey, I'm leerob 👋
+            hey, I'm salah 👋
           </h1>
           <p className="prose prose-neutral dark:prose-invert">
-            {`I'm a frontend developer, optimist, and community builder. I currently `}
-            <Link href="/work">work</Link>
-            {` as the VP of Product at `}
-            <span className="not-prose">
-              <Badge href="https://vercel.com/home">
-                <svg
-                  width="13"
-                  height="11"
-                  role="img"
-                  aria-label="Vercel logo"
-                  className="mr-1 inline-flex"
-                >
-                  <use href="/sprite.svg#vercel" />
-                </svg>
-                Vercel
+            {`I'm a full-stack developer, optimist, and community ethusiast. I currently `} <Link href="/projects">building</Link>
+
+<span className='not-prose'>
+
+              <Badge href="https://github.com/ahmadsalahuddeen/scope-agency-builder">
+              <img
+                alt="Scope logo"
+                src="/images/scope-logo.svg"
+                className="!mr-1"
+                width="14"
+                height="14"
+                />
+              Scope  
               </Badge>
-            </span>
-            {`, where I help teach the `}
+                </span>
+            {`, a multi-vendor B2B2B Agency builder with `}
+            <span className='not-prose'>
+
             <Badge href="https://nextjs.org">
               <img
                 alt="Next.js logomark"
-                src="/next-logo.svg"
+                src="/images/next-logo.svg"
                 className="!mr-1"
                 width="14"
                 height="14"
-              />
+                />
               Next.js
             </Badge>
-            {` community, an open-source web framework built with `}
-            <Badge href="https://react.dev">
-              <svg
-                width="14"
-                height="14"
-                role="img"
-                aria-label="React logo"
-                className="!mr-1"
-              >
-                <use href="/sprite.svg#react" />
-              </svg>
-              React
-            </Badge>
-            .
+                </span>
+                .
+            {` Other than that, I'm into traveling, desk setups, and van life!`}
+            
+            
           </p>
           <div className="my-8 columns-2 gap-4 sm:columns-3">
             <div className="relative mb-4 h-40">
               <Image
-                alt="Me speaking on stage at React Summit about the future of Next.js"
-                src={'/favicon.png'}
+                alt="getting ready for wine party at DebConf'23"
+                src={'/images/debocnfmeet.jpeg'}
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
                 priority
@@ -165,8 +156,8 @@ export default function Example() {
             </div>
             <div className="relative mb-4 h-80 sm:mb-0">
               <Image
-                alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
-                src={'/favicon.png'}
+                alt="getting ready for wine party at DebConf'23"
+                src={'/images/googlemeet.jpg'}
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
                 priority
@@ -175,8 +166,8 @@ export default function Example() {
             </div>
             <div className="relative h-40 sm:mb-4 sm:h-80">
               <Image
-                alt="Me standing on stage at Reactathon delivering the keynote"
-                src={'/favicon.png'}
+                alt="Desksetup at home "
+                src={'/images/desksetup.jpeg'}
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
                 priority
@@ -186,7 +177,7 @@ export default function Example() {
             <div className="relative mb-4 h-40 sm:mb-0">
               <Image
                 alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
-                src={'/favicon.png'}
+                src={'/images/personalphoto.jpg'}
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
                 priority
@@ -195,8 +186,8 @@ export default function Example() {
             </div>
             <div className="relative mb-4 h-40">
               <Image
-                alt="Me and Guillermo Rauch on stage for Vercel Ship, answering questions from the Next.js community"
-                src={'/favicon.png'}
+                alt="me and other debians discussing some serious matters :)"
+                src={'/images/devconf.JPG'}
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
                 priority
@@ -205,8 +196,8 @@ export default function Example() {
             </div>
             <div className="relative h-80">
               <Image
-                alt="My badge on top of a pile of badges from a Vercel meetup we held"
-                src={'/favicon.png'}
+                alt="desk setup"
+                src={'/images/desksetup2.jpg'}
                 fill
                 sizes="(min-width: 768px) 213px, 33vw"
                 priority
@@ -214,7 +205,7 @@ export default function Example() {
               />
             </div>
           </div>
-          <div className="prose prose-neutral dark:prose-invert">
+          {/* <div className="prose prose-neutral dark:prose-invert">
             <p>
               I create educational content for developers, teaching them about
               web development, JavaScript and TypeScript, React and Next.js, and
@@ -224,8 +215,8 @@ export default function Example() {
             </p>
           </div>
           <div className="my-8 flex w-full flex-col space-x-0 space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
-            //TODO:
-            {/* <ChannelLink
+
+            <ChannelLink
     img={avatar}
     name="@leerob"
     link="https://www.youtube.com/@leerob"
@@ -234,99 +225,83 @@ export default function Example() {
     img={vercel}
     name="@vercel"
     link="https://www.youtube.com/@vercelhq"
-  /> */}
-          </div>
+  />
+          </div> */}
           <div className="prose prose-neutral dark:prose-invert">
             <p>
-              Over the past decade, I've written content on my blog and
-              newsletter. I try to keep things simple. You'll find writing about
+              Over the past years, I've created content on my socials and
+              instagram. I try to keep things simple. You'll find writing/videos about
               technologies I'm interested in at the time, or how I'm learning
               and growing in my career, sharing knowledge along the way.
             </p>
           </div>
-          <div className="my-8 flex w-full flex-col space-y-4">
-            //TODO:
-            {/* <BlogLink
+          {/* <div className="my-8 flex w-full flex-col space-y-4">
+
+            <BlogLink
     name="What Makes A Great Developer Experience?"
     slug="developer-experience"
     />
     <BlogLink name="What is Developer Relations?" slug="devrel" />
-  <BlogLink name="The Story of Heroku" slug="heroku" /> */}
+  <BlogLink name="The Story of Heroku" slug="heroku" />
           </div>
           <div className="prose prose-neutral dark:prose-invert">
             <p>
               I invest small angel checks into early stage startups building
               tools for developers.
             </p>
-          </div>
+          </div> */}
           <div className="my-8 flex h-14 w-full flex-row space-x-2 overflow-x-auto">
-            <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-              <a href="https://linear.app">
-                <svg width="78" height="20" role="img" aria-label="Linear logo">
-                  <use href="/sprite.svg#linear" />
-                </svg>
+          <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
+              <a className='text-white' href="https://twitter.com/salahuddeen6017">
+                <Twitter size={20} />
+
               </a>
             </div>
             <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-              <a href="https://supabase.com">
-                <svg
-                  width="100"
-                  height="19"
-                  role="img"
-                  aria-label="Supabase logo"
-                >
-                  <use href="/sprite.svg#supabase" />
-                </svg>
+              <a className='text-white' href="https://www.youtube.com/channel/UCOyK9QcS9N_Fn_2OVbuH7qQ">
+          <Youtube size={20} />
               </a>
             </div>
             <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-              <a href="https://www.makeswift.com/blog/makeswift-is-joining-bigcommerce">
-                <svg
-                  width="96"
-                  height="19"
-                  role="img"
-                  aria-label="Makeswift logo"
-                >
-                  <use href="/sprite.svg#makeswift" />
-                </svg>
+              <a className='text-white' href="https://www.instagram.com/swalahkenb/">
+              <Instagram size={20} />
+          
               </a>
             </div>
             <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-              <a href="https://resend.com">
-                <svg width="70" height="17" role="img" aria-label="Resend logo">
-                  <use href="/sprite.svg#resend" />
-                </svg>
+              <a className='text-white' href="https://www.linkedin.com/in/ahmad-salahuddeen-55357b158/">
+                <Linkedin size={20} />
+          
               </a>
             </div>
             <div className="flex items-center justify-between rounded border border-neutral-200 bg-neutral-50 px-3 py-4 dark:border-neutral-700 dark:bg-neutral-800">
-              <a href="https://bun.sh">
-                <svg width="35" height="27" role="img" aria-label="Bun logo">
-                  <use href="/sprite.svg#bun" />
-                </svg>
+              <a className='text-white' href="https://github.com/ahmadsalahuddeen">
+              <GithubIcon size={20} />
+          
               </a>
             </div>
           </div>
-          <div className="prose prose-neutral dark:prose-invert">
+          {/* <div className="prose prose-neutral dark:prose-invert">
             <p>
               I've worked with and advised companies on{' '}
               <Link href="/blog/developer-marketing">developer marketing</Link>,{' '}
               <Link href="/blog/devrel">developer relations</Link>, building
               open-source communities, product-led growth, and more.
             </p>
-          </div>
+          </div> */}
           <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
             <li>
               <a
                 className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://twitter.com/leeerob"
+                href="https://twitter.com/salahuddeen6017"
               >
                 <ArrowIcon />
                 <p className="ml-2 h-7">follow me</p>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
                 rel="noopener noreferrer"
@@ -336,7 +311,7 @@ export default function Example() {
                 <ArrowIcon />
                 <p className="ml-2 h-7">get email updates</p>
               </a>
-            </li>
+            </li> */}
           </ul>
         </section>
       </div>
