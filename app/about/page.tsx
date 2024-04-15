@@ -23,7 +23,7 @@ const socials = [
     icon: <Github size={20} />,
     href: 'https://github.com/ahmadsalahuddeen',
     label: 'Github',
-    handle: 'chronark',
+    handle: 'ahmadsalahuddeen',
   },
 ];
 function Badge(props: any) {

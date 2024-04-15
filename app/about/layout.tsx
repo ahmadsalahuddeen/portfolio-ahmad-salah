@@ -5,18 +5,18 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'chronark.com',
-    template: '%s | chronark.com',
+    default: 'salahkenb.com',
+    template: '%s | salahkenb.com',
   },
-  description: 'Co-founder of unkey.dev and founder of planetfall.io',
+  description: 'Founder of scope and fitsync',
   openGraph: {
-    title: 'chronark.com',
-    description: 'Co-founder of unkey.dev and founder of planetfall.io',
-    url: 'https://chronark.com',
-    siteName: 'chronark.com',
+    title: 'salahkenb.com',
+    description: 'Founder of scope and fitsync',
+    url: 'https://salahkenb.com',
+    siteName: 'salahkenb.com',
     images: [
       {
-        url: 'https://chronark.com/og.png',
+        url: 'https://salahkenb.com/og.png',
         width: 1920,
         height: 1080,
       },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: 'Chronark',
+    title: 'salahuddeen',
     card: 'summary_large_image',
   },
   icons: {
