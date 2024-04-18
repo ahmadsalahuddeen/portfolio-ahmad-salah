@@ -1,5 +1,5 @@
 'use client';
-import { Github, GithubIcon, Instagram, Linkedin, Mail, Twitter, Youtube } from 'lucide-react';
+import { Github, GithubIcon, Instagram, Linkedin, Mail, Twitter, X, Youtube } from 'lucide-react';
 import Link from 'next/link';
 import { Navigation } from '../components/nav';
 import { Card } from '../components/card';
@@ -8,7 +8,7 @@ import { Suspense } from 'react';
 
 const socials = [
   {
-    icon: <Twitter size={20} />,
+    icon: <X size={20} />,
     href: 'https://twitter.com/salahuddeen6017',
     label: 'Twitter',
     handle: '@salahuddeen6017',
@@ -177,7 +177,7 @@ export default function Example() {
             <div className="relative mb-4 h-40 sm:mb-0">
               <Image
                 alt="Me standing on stage at SmashingConf giving a talk about my optimism for the web"
-                src={'/images/personalphoto.jpg'}
+                src={'/images/googleevent.jpeg'}
                 fill
                 sizes="(max-width: 768px) 213px, 33vw"
                 priority
